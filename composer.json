@@ -15,7 +15,9 @@
         }
     ],
     "require": {
-        "php": "^8.4"
+        "php": "^8.3",
+        "laravel/mcp": "^0.1.1",
+        "laravel/framework": "^v12.28.0"
     },
     "require-dev": {
         "pestphp/pest": "^4.0",
@@ -24,7 +26,7 @@
     },
     "autoload": {
         "psr-4": {
-            "McpTwitch\\TwitchTool\\": "src"
+            "McpTwitch\\TwitchTool\\": "app"
         }
     },
     "autoload-dev": {
@@ -34,7 +36,7 @@
     },
     "scripts": {
         "test": "vendor/bin/pest",
-            "test-coverage": "vendor/bin/pest --coverage",
+        "test-coverage": "vendor/bin/pest --coverage",
         "format": "vendor/bin/pint"
     },
     "config": {
