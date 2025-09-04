@@ -2,7 +2,6 @@
 
 namespace McpTwitch\TwitchTool\Mcp\Tools;
 
-use Generator;
 use Laravel\Mcp\Server\Tool;
 use Laravel\Mcp\Server\Tools\Annotations\Title;
 use Laravel\Mcp\Server\Tools\ToolInputSchema;
@@ -33,9 +32,6 @@ class TwitchChatTool extends Tool
 
     /**
      * Execute the tool call.
-     *
-     * @param array $arguments
-     * @return ToolResult
      */
     public function handle(array $arguments): ToolResult
     {
